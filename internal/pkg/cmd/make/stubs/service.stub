@@ -1,0 +1,57 @@
+package {{PackageName}}
+
+import (
+    "github.com/gin-gonic/gin"
+    "gorm.io/gorm/clause"
+    "free_ssl/internal/models"
+    "free_ssl/internal/pkg/paginator"
+    "racent.com/pkg/database"
+)
+
+func Get(idStr string) ({{VariableName}} models.{{StructName}}) {
+    database.DB.Where("id", idStr).First(&{{VariableName}})
+    return
+}
+
+func GetDetail(idStr string) ({{VariableName}} models.{{StructName}}) {
+    database.DB.Where("id", idStr).Preload(clause.Associations).First(&{{VariableName}})
+    return
+}
+
+
+func GetBy(field, value string) ({{VariableName}} models.{{StructName}}) {
+    database.DB.Where(field+" = ?", value).First(&{{VariableName}})
+    return
+}
+
+func GetByModel(model *models.{{StructName}}) ({{VariableName}} models.{{StructName}}) {
+	database.DB.Where(model).First(&{{VariableName}})
+	return
+}
+
+
+func All(model *models.{{StructName}}) ({{VariableNamePlural}} []models.{{StructName}}) {
+    database.DB.Where(model).Find(&{{VariableNamePlural}})
+    return
+}
+
+func IsExist(field, value string) bool {
+    var count int64
+    database.DB.Model(models.{{StructName}}{}).Where(field+" = ?", value).Count(&count)
+    return count > 0
+}
+
+func Paginate(c *gin.Context, perPage int) ({{VariableNamePlural}} []models.{{StructName}}, paging paginator.Paging) {
+    queryDB := database.DB.Model(models.{{StructName}}{})
+    // keyword := c.DefaultQuery("keyword", "")
+    // if keyword != "" {
+    //     queryDB.Where("name LIKE ?", "%"+keyword+"%")
+    // }
+    paging = paginator.Paginate(
+        c,
+        queryDB,
+        &{{VariableNamePlural}},
+        perPage,
+    )
+    return
+}

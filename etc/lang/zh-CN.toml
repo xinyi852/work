@@ -1,0 +1,323 @@
+[err_is_guest]
+other = "用户未登录"
+
+[success]
+other = "操作成功"
+
+[err_default]
+other = "操作失败，请稍后再试"
+
+[err_validate]
+other = "请求验证不通过，具体请查看 errors"
+
+[err_attempt_login]
+other = "账号不存在或者密码错误"
+
+[err_user_exist]
+other = "用户不存在，或者已删除"
+
+[err_guest]
+other = "请使用游客身份访问"
+
+[err_jwt_token_expired]
+other = "令牌已过期"
+
+[err_jwt_token_expired_max_refresh]
+other = "令牌已过最大刷新时间"
+
+[err_jwt_token_malformed]
+other = "请求令牌格式有误"
+
+[err_jwt_token_invalid]
+other = "请求令牌无效"
+
+[err_jwt_token_empty]
+other = "需要认证才能访问！"
+
+[err_jwt_header_malformed]
+other = "请求头中 Authorization 格式有误"
+
+[err_origin_password_invalid]
+other = "原始密码不正确"
+
+[err_unauthorized]
+other = "操作失败，没有权限"
+
+[err_not_found]
+other = "数据不存在或者已删除"
+
+[err_unprocessable_entity]
+other = "请求解析错误，请确认请求格式是否正确。上传文件请使用 multipart 标头，参数请使用 json 格式。"
+
+[test_msg_1]
+one = "这是单数 {{.num}} !"
+other = "这是复数 {{.num}} ?"
+
+[test_msg_2]
+one = "直接使用不用替换!"
+other = "直接使用不用替换?"
+
+[yes]
+other = "是"
+
+[no]
+other = "否"
+
+[switch_open]
+other = "开启"
+
+[switch_off]
+other = "关闭"
+
+[product_not_exist_enable]
+other = "产品不存在或未启用"
+
+[product_price_error_msg]
+other = "产品价格错误"
+
+[product_option_price_error_msg]
+other = "可配置项价格错误"
+
+[product_option_error_msg]
+other = "可配置项错误"
+
+[product_mismatch_option_msg]
+other = "产品和可配置项不匹配"
+
+[price_cal_error]
+other = "价格计算错误"
+
+[required]
+other = "{{.attribute}} 不能为空。"
+
+[email_rule]
+other = "The {{.attribute}} 必须为邮箱."
+
+[json]
+other = "{{.attribute}} 必须是正确的 JSON 格式。"
+
+[valid_email]
+other = "{{.attribute}} 必须是正确的邮箱。"
+
+[numeric_between]
+other = "{{.attribute}} 必须介于 {{.min}} - {{.max}} 之间。"
+
+[numeric_min]
+other = "{{.attribute}} 必须大于等于  {{.min}}."
+
+[numeric_max]
+other = "{{.attribute}} 不能大于 {{.max}}."
+
+[in]
+other = "The selected {{.attribute}} is invalid."
+
+[order_create_error_msg]
+other = "订单创建失败"
+
+[order_pending]
+other = "待审核"
+
+[order_rejected]
+other = "已拒绝"
+
+[order_passed]
+other = "已通过"
+
+[type_new]
+other = "新购"
+
+[type_upgrade]
+other = "升级"
+
+[multi_domain]
+other = "多域名"
+
+[wild_domain]
+other = "通配符"
+
+[day]
+other = "天"
+
+[month]
+other = "月"
+
+[year]
+other = "年"
+
+[order_not_exist]
+other = "订单不存在"
+
+[order_approve_failed]
+other = "订单审核失败"
+
+[sub_status_error]
+other = "实例状态错误"
+
+[csr_error]
+other = "csr错误"
+
+[csr_domain_error]
+other = "csr的CN必须在申请域名中"
+
+[domain_no_exist]
+other = "域名不存在"
+
+[domain_num_exceeds]
+other = "域名数超出限制"
+
+[illegal]
+other = "不合法"
+
+[dcvmethod_error]
+other = "域名验证方式不合法"
+
+[wildCount_exceed_error]
+other = "通配符超出个数为："
+
+[normalCount_exceed_error]
+other = "标准域名超出个数为："
+
+
+[number_sort]
+other = "第"
+
+[line]
+other = "行"
+
+[sfz]
+other = "身份证"
+
+[hz]
+other = "护照"
+
+[tydmz]
+other = "统一社会信用代码证书"
+
+[others]
+other = "其他"
+
+[email-verification]
+other = "邮箱验证"
+
+[dns-verification]
+other = "DNS验证"
+
+[file-verification]
+other = "文件验证"
+
+[https-file-verification]
+other = "文件验证(HTTPS)"
+
+[sub_draft_err]
+other = "保存草稿错误"
+
+[product_error_msg]
+other = "产品信息有误"
+
+
+[approval-pending]
+other = "待审批"
+
+[invalid]
+other = "作废"
+
+[paid]
+other = "待提交"
+
+[paid-cancel]
+other = "已取消"
+
+[applying]
+other = "申请中"
+
+[applying-cancel]
+other = "已取消"
+
+[issued]
+other = "已签发"
+
+[issued-cancel]
+other = "已取消"
+
+[expired]
+other = "已过期"
+
+[applying-failed]
+other = "待提交"
+
+[reissued]
+other = "已重签"
+
+[reissued-cancel]
+other = "已取消"
+
+[renewed]
+other = "已续费"
+
+[revoked]
+other = "已注销"
+
+[filename]
+other = "文件名"
+
+[fileName]
+other ="文件名"
+
+[path]
+other ="路径"
+
+[content]
+other ="内容"
+
+[dnshost]
+other ="主机记录"
+
+[dnsvalue]
+other ="记录值"
+
+[dnstype]
+other ="记录类型"
+
+# songjunjiang begin
+[instance-status-error]
+other = "实例状态错误"
+
+[err_api_signature_invalid]
+other = "API签名错误"
+
+# songjunjiang end
+
+# nick begin
+[sub_info_error]
+other = "实例信息有误"
+# nick end
+
+# maoqi begin
+# maoqi endother ="记录类型"
+
+[sub_name_empty]
+other = "实例名称不能为空"
+
+[upload_type_err]
+other = "上传类型错误"
+
+[private_key_empty]
+other = "私钥不能为空"
+
+[public_key_err]
+other = "公钥错误"
+
+[private_key_err]
+other = "私钥错误"
+
+[file_ext_err]
+other = "文件类型错误"
+
+[category_code_empty]
+other = "证书类型不能为空"
+
+[category_code_error]
+other = "证书类型错误"
+
+[err_dns_txt_record_missing]
+other = "域名 {{.domain}} 没有找到TXT类型的DNS记录"

@@ -1,0 +1,326 @@
+[err_is_guest]
+other = "The user is not logged in"
+
+[success]
+other = "success"
+
+[err_default]
+other = "The operation failed, please try again later"
+
+[err_validate]
+other = "The request verification failed, please see errors for details"
+
+[err_attempt_login]
+other = "The account does not exist or the password is incorrect"
+
+[err_user_exist]
+other = "The user does not exist, or has been deleted"
+
+[err_guest]
+other = "Please visit as a guest"
+
+[err_jwt_token_expired]
+other = "The token has expired"
+
+[err_jwt_token_expired_max_refresh]
+other = "The maximum refresh time of the token has passed"
+
+[err_jwt_token_malformed]
+other = "The request token is malformed"
+
+[err_jwt_token_invalid]
+other = "The request token is invalid"
+
+[err_jwt_token_empty]
+other = "Authentication is required for access！"
+
+[err_jwt_header_malformed]
+other = "The Authorization header is malformed"
+
+[err_origin_password_invalid]
+other = "The original password is invalid"
+
+[err_unauthorized]
+other = "The operation failed with no permissions"
+
+[err_not_found]
+other = "The data does not exist or has been deleted"
+
+[err_unprocessable_entity]
+other = "The request is parsed incorrectly, check whether the request format is correct. Use the Multipart header for uploading the file, and the JSON format for the parameters."
+
+[test_msg_1]
+one = "this is {{.num}} !"
+other = "this is {{.num}} ?"
+
+[test_msg_2]
+one = "Use directly without replacement!"
+other = "Use directly without replacement?"
+
+[yes]
+other = "yes"
+
+[no]
+other = "no"
+
+[switch_open]
+other = "open"
+
+[switch_off]
+other = "off"
+
+[product_not_exist_enable]
+other = "Product does not exist or is not enabled"
+
+[product_price_error_msg]
+other = "Product price error"
+
+[product_option_price_error_msg]
+other = "Product Option price error"
+
+[product_option_error_msg]
+other = "Product Option error"
+
+[product_mismatch_option_msg]
+other = "Product and Options do not match"
+
+[price_cal_error]
+other = "Price calculation error"
+
+[required]
+other = "The {{.attribute}} field is required."
+
+[email_rule]
+other = "The {{.attribute}} field must be email."
+
+
+[json]
+other = "The {{.attribute}} must be a valid JSON string."
+
+[valid_email]
+other = "The {{.attribute}} must be a valid email."
+
+
+[numeric_between]
+other = "The {{.attribute}} must be between {{.min}} and {{.max}}."
+
+[numeric_min]
+other = "The {{.attribute}} must be at least {{.min}}."
+
+[numeric_max]
+other = "The {{.attribute}} may not be greater than {{.max}}."
+
+[in]
+other = "The selected {{.attribute}} is invalid."
+
+[order_create_error_msg]
+other = "Order creation failed"
+
+[order_pending]
+other = "Pending"
+
+[order_rejected]
+other = "Rejected"
+
+[order_passed]
+other = "Passed"
+
+[type_new]
+other = "New"
+
+[type_upgrade]
+other = "Upgrade"
+
+[multi_domain]
+other = "Multi"
+
+[wild_domain]
+other = "Wild"
+
+[day]
+other = "day"
+
+[month]
+other = "Month"
+
+[year]
+other = "Year"
+
+[order_not_exist]
+other = "Order does not exist"
+
+[order_approve_failed]
+other = "Order approval failed"
+
+[sub_status_error]
+other = "Instance status error"
+
+[csr_error]
+other = "csr is illegal"
+
+[csr_domain_error]
+other = "The common name of csr must be in domains"
+
+[domain_no_exist]
+other = "Domain does not exist"
+
+[domain_num_exceeds]
+other = "The number of domain names exceeds the limit"
+
+[illegal]
+other = "illegal"
+
+[dcvmethod_error]
+other = "dcvMethod is illegal"
+
+[wildCount_exceed_error]
+other = "The number of wildcards exceeds "
+
+[normalCount_exceed_error]
+other = "The number of standard exceeds "
+
+
+[number_sort]
+other = "No."
+
+[line]
+other = "line"
+
+
+[sfz]
+other = "ID card"
+
+[hz]
+other = "Passport"
+
+[tydmz]
+other = "Unified Social Credit Code"
+
+[others]
+other = "Others"
+
+[email-verification]
+other = "EMAIL"
+
+[dns-verification]
+other = "DNS"
+
+[file-verification]
+other = "HTTP FILE"
+
+[https-file-verification]
+other = "HTTPS FILE"
+
+[sub_draft_err]
+other = "Save draft error"
+
+[product_error_msg]
+other = "Product error"
+
+[approval-pending]
+other = "Unapproved"
+
+[invalid]
+other = "Invalid"
+
+[paid]
+other = "Paid"
+
+[paid-cancel]
+other = "Cancelled"
+
+[applying]
+other = "Applying"
+
+[applying-cancel]
+other = "Cancelled"
+
+[issued]
+other = "Issued"
+
+[issued-cancel]
+other = "Cancelled"
+
+[expired]
+other = "Expired"
+
+[applying-failed]
+other = "Paid"
+
+[reissued]
+other = "Reissued"
+
+[reissued-cancel]
+other = "Cancelled"
+
+[renewed]
+other = "Renewed"
+
+[revoked]
+other = "Revoked"
+
+[filename]
+other = "File name"
+
+[fileName]
+other ="File name"
+
+[path]
+other ="Path"
+
+[content]
+other ="Content"
+
+[dnshost]
+other ="Host"
+
+[dnsvalue]
+other ="Value"
+
+[dnstype]
+other ="Type"
+
+# songjunjiang begin
+[instance-status-error]
+other = "Instance state error"
+
+[err_api_signature_invalid]
+other = "API signature error"
+
+# songjunjiang end
+
+# nick begin
+[sub_info_error]
+other = "Incorrect instance information"
+# nick end
+
+# maoqi begin
+
+# maoqi endother ="Type"
+
+[sub_name_empty]
+other = "Subscription name cannot be empty"
+
+[upload_type_err]
+other = "The upload type is error"
+
+[private_key_empty]
+other = "Private key cannot be empty"
+
+[public_key_err]
+other = "Public key error"
+
+[private_key_err]
+other = "Private key error"
+
+[file_ext_err]
+other = "Wrong file type"
+
+[category_code_empty]
+other = "Product category cannot be empty"
+
+[category_code_error]
+other = "Product category error"
+
+[err_dns_txt_record_missing]
+other = "No DNS TXT record found for {{.domain}}"

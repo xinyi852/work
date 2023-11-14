@@ -1,0 +1,65 @@
+app:
+  name: plesk_service
+  key: xxxxxxxxx
+  env: production
+  debug: false
+  url: http://localhost:8856
+  port: 8856
+  timezone: Asia/Shanghai
+  locale: zh-CN
+
+log:
+  name: runtime/logs/logs.log
+  type: info
+  level: debug
+  max_size: 10
+  max_backup: 100
+  max_age: 30
+  compress: true
+
+db:
+  enable: true
+  connection: mysql
+  host: 180.76.39.233
+  port: 3306
+  database: plesk
+  username: root
+  password: racent2022
+  max_idle_connections: 25
+  max_open_connections: 100
+  max_life_seconds: 600
+
+# db:
+#   enable: true
+#   connection: mysql
+#   host: 127.0.0.1
+#   port: 3306
+#   database: plesk
+#   username: plesk
+#   password: racent2022
+#   max_idle_connections: 25
+#   max_open_connections: 100
+#   max_life_seconds: 600
+
+redis:
+  enable: true
+  host: 127.0.0.1
+  port: 6379
+  password: xxxx
+  main_db: 1
+
+cert_driver:
+  -
+    vendor_id: sectigo
+    login_name: username1
+    login_password: asd123
+    ap: asd1
+    reseller: racent1
+    test: test1
+  -
+    vendor_id: sslTrus
+    login_name: username2
+    login_password: as654321
+    ap: asd2
+    reseller: racent2
+    test: test2
